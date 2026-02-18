@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Храм Казанской иконы Божией Матери | Красный Путь</title>
+
+<meta name="description" content="Официальный сайт Храма Казанской иконы Божией Матери в селе Красный Путь Домодедовского района. Расписание богослужений, новости, контакты.">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+body {font-family:'Montserrat',sans-serif;background:#0e0e0e;color:#eee;line-height:1.7;}
+h1,h2,h3{font-family:'Playfair Display',serif;color:#d4af37;}
+.container{width:90%;max-width:1200px;margin:auto;}
+section{padding:80px 0;}
+img{max-width:100%;border-radius:10px;}
+
+/* Навигация */
+nav{background:#000;position:fixed;width:100%;z-index:1000;}
+.nav-container{display:flex;justify-content:space-between;align-items:center;padding:15px 0;}
+.logo{color:#d4af37;font-weight:bold;}
+.menu{list-style:none;display:flex;gap:25px;}
+.menu a{color:white;text-decoration:none;transition:0.3s;}
+.menu a:hover{color:#d4af37;}
+.burger{display:none;font-size:28px;color:white;cursor:pointer;}
+
+/* Главный экран */
+header{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url('IMG_20170507_102527.jpg') center/cover;
+display:flex;
+align-items:center;
+text-align:center;
+}
+header h1{font-size:48px;}
+header p{margin-top:20px;font-size:20px;}
+
+/* Блоки */
+.about,.clergy{display:flex;gap:40px;align-items:center;}
+.card{
+background:#1a1a1a;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+.card:hover{transform:translateY(-5px);}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+
+.donate{
+background:#111;
+border:1px solid #d4af37;
+text-align:center;
+padding:40px;
+border-radius:10px;
+}
+.donate button{
+background:#d4af37;
+border:none;
+padding:12px 25px;
+font-weight:bold;
+cursor:pointer;
+margin-top:20px;
+}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.gallery img{transition:0.3s;}
+.gallery img:hover{transform:scale(1.05);}
+
+footer{background:#000;text-align:center;padding:30px 0;font-size:14px;}
+
+/* Адаптив */
+@media(max-width:768px){
+.menu{
+position:absolute;
+top:60px;
+right:0;
+background:#000;
+flex-direction:column;
+width:220px;
+display:none;
+padding:20px;
+}
+.menu.active{display:flex;}
+.burger{display:block;}
+.about,.clergy{flex-direction:column;}
+header h1{font-size:32px;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container nav-container">
+<div class="logo">Казанский храм</div>
+<ul class="menu">
+<li><a href="#about">О храме</a></li>
+<li><a href="#clergy">Духовенство</a></li>
+<li><a href="#schedule">Расписание</a></li>
+<li><a href="#news">Новости</a></li>
+<li><a href="#donate">Пожертвования</a></li>
+<li><a href="#contact">Контакты</a></li>
+</ul>
+<div class="burger">&#9776;</div>
+</div>
+</nav>
+
+<header>
+<div class="container">
+<h1>Храм Казанской иконы Божией Матери</h1>
+<p>Село Красный Путь, Домодедовский район</p>
+</div>
+</header>
+
+<section id="about" class="container about">
+<img src="kazanskiyhram (1).jpg" alt="Храм">
+<div>
+<h2>О храме</h2>
+<p>Храм был основан по благословению митрополита Ювеналия. Первые богослужения проходили во временном храме. Сегодня церковь является духовным центром поселка.</p>
+<p>При храме действует воскресная школа, проводится работа с молодежью и военнослужащими, организуются праздники и благотворительные мероприятия.</p>
+</div>
+</section>
+
+<section id="clergy" class="container">
+<h2>Духовенство</h2>
+<div class="grid">
+<div class="card">
+<h3>Настоятель</h3>
+<p>Священник Лев Корнеев</p>
+<p>Осуществляет духовное окормление прихода и воинской части №92574.</p>
+</div>
+<div class="card">
+<h3>Протоиерей</h3>
+<p>Александр Васильев</p>
+<p>Благочинный Домодедовского округа.</p>
+</div>
+</div>
+</section>
+
+<section id="schedule" class="container">
+<h2>Расписание богослужений</h2>
+<div class="card">
+<p>Суббота – 17:00 Вечернее богослужение</p>
+<p>Воскресенье – 8:00 Божественная литургия</p>
+<p>Праздничные дни – 9:00</p>
+</div>
+</section>
+
+<section id="news" class="container">
+<h2>Новости прихода</h2>
+<div class="grid">
+<div class="card">
+<h3>Праздник Казанской иконы</h3>
+<p>Состоялась торжественная литургия с участием прихожан и гостей.</p>
+</div>
+<div class="card">
+<h3>Работа воскресной школы</h3>
+<p>Начался новый учебный год для детей и молодежи прихода.</p>
+</div>
+</div>
+</section>
+
+<section id="donate" class="container">
+<div class="donate">
+<h2>Поддержать храм</h2>
+<p>Вы можете внести пожертвование на развитие и благоустройство храма.</p>
+<p>Реквизиты: карта Сбербанка **** **** **** 1234</p>
+<button>Сделать пожертвование</button>
+</div>
+</section>
+
+<section id="contact" class="container">
+<h2>Контакты</h2>
+<p>📍 Московская область, Домодедовский район, с. Красный Путь</p>
+<p>📞 +7 (926) 356-71-46</p>
+<p>✉️ izotnick@gmail.com</p>
+
+<iframe 
+src="https://www.google.com/maps?q=Красный+Путь+Домодедово&output=embed"
+width="100%" height="400" style="border:0;border-radius:10px;margin-top:20px;">
+</iframe>
+</section>
+
+<footer>
+<p>© 2026 Храм Казанской иконы Божией Матери. Все права защищены.</p>
+</footer>
+
+<script>
+const burger=document.querySelector('.burger');
+const menu=document.querySelector('.menu');
+burger.addEventListener('click',()=>{menu.classList.toggle('active');});
+</script>
+
+</body>
+</html>
